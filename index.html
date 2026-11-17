@@ -1,0 +1,1129 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071b31">
+  <meta name="description" content="ChefTec: manutenção, instalação, assistência técnica e venda de equipamentos para cozinhas industriais em João Pessoa - PB.">
+  <title>ChefTec | Soluções para Cozinhas Industriais</title>
+
+  <style>
+    :root {
+      --navy: #071b31;
+      --navy-light: #103452;
+      --blue: #086b87;
+      --teal: #62b9b4;
+      --teal-bright: #72d6ce;
+      --white: #ffffff;
+      --light: #f3f7f8;
+      --text: #203348;
+      --muted: #607386;
+      --border: #dce7eb;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    button { font: inherit; }
+
+    .container {
+      width: min(1140px, 90%);
+      margin: auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 17px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 20px;
+      height: 2px;
+      background: var(--teal);
+    }
+
+    h1, h2, h3 { line-height: 1.16; }
+
+    h2 {
+      font-size: clamp(29px, 4vw, 43px);
+      letter-spacing: -1.4px;
+      margin-bottom: 19px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 24px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 800;
+      transition: .25s;
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--teal);
+      color: var(--navy);
+    }
+
+    .btn-primary:hover {
+      background: var(--teal-bright);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      color: var(--white);
+      border-color: #668295;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--teal);
+      color: var(--teal);
+    }
+
+    /* CABEÇALHO */
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(7,27,49,.97);
+      border-bottom: 1px solid rgba(255,255,255,.1);
+      backdrop-filter: blur(12px);
+    }
+
+    .nav-wrap {
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--white);
+    }
+
+    .brand-symbol {
+      width: 43px;
+      height: 43px;
+      display: grid;
+      place-items: center;
+      border: 2px solid var(--teal);
+      border-radius: 50%;
+      background: #103a55;
+      color: var(--teal);
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .brand-name {
+      display: block;
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: 1.7px;
+      line-height: 1;
+    }
+
+    .brand-caption {
+      display: block;
+      color: var(--teal);
+      font-size: 8px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-top: 6px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 29px;
+    }
+
+    .nav-links a {
+      color: #d9e6ee;
+      font-size: 13px;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    .nav-links a:hover { color: var(--teal); }
+
+    .nav-links .nav-cta {
+      color: var(--navy);
+      background: var(--teal);
+      padding: 12px 17px;
+      border-radius: 5px;
+    }
+
+    .nav-links .nav-cta:hover {
+      color: var(--navy);
+      background: var(--teal-bright);
+    }
+
+    .menu-button {
+      display: none;
+      background: transparent;
+      border: 1px solid #4b6c7d;
+      border-radius: 5px;
+      color: white;
+      padding: 8px 12px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    /* PRIMEIRA SEÇÃO */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 82% 45%, #13516a 0%, transparent 40%),
+        linear-gradient(120deg, #071b31, #0c2945);
+      color: var(--white);
+      padding: 100px 0 105px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+      background-size: 52px 52px;
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      align-items: center;
+      gap: 55px;
+    }
+
+    .hero .eyebrow { color: var(--teal-bright); }
+
+    .hero h1 {
+      font-size: clamp(40px, 5.3vw, 70px);
+      letter-spacing: -2.8px;
+      line-height: 1.06;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span { color: var(--teal); }
+
+    .hero-description {
+      max-width: 515px;
+      color: #c4d6df;
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .hero-note {
+      margin-top: 37px;
+      color: #a9c3ce;
+      font-size: 12px;
+      letter-spacing: .8px;
+    }
+
+    .hero-visual {
+      min-height: 405px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .visual-ring {
+      position: absolute;
+      width: 375px;
+      height: 375px;
+      max-width: 100%;
+      border: 1px solid rgba(98,185,180,.32);
+      border-radius: 50%;
+      box-shadow: 0 0 0 37px rgba(98,185,180,.035),
+                  0 0 0 76px rgba(98,185,180,.025);
+    }
+
+    .oven-illustration {
+      width: 100%;
+      max-width: 465px;
+      position: relative;
+      z-index: 1;
+      filter: drop-shadow(0 28px 35px rgba(0,0,0,.4));
+    }
+
+    .visual-label {
+      position: absolute;
+      bottom: 4px;
+      right: 0;
+      z-index: 2;
+      background: #fff;
+      color: var(--navy);
+      padding: 15px 19px;
+      border-left: 4px solid var(--teal);
+      box-shadow: 0 10px 35px rgba(0,0,0,.2);
+    }
+
+    .visual-label strong {
+      display: block;
+      font-size: 14px;
+    }
+
+    .visual-label span {
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    /* FAIXA DE DIFERENCIAIS */
+
+    .features {
+      background: #0b304b;
+      color: white;
+      border-top: 1px solid rgba(255,255,255,.1);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .feature {
+      padding: 24px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 12px;
+      font-weight: 800;
+      border-right: 1px solid rgba(255,255,255,.12);
+    }
+
+    .feature:last-child { border: none; }
+
+    .feature span {
+      color: var(--teal);
+      font-size: 23px;
+    }
+
+    /* SERVIÇOS */
+
+    .section { padding: 98px 0; }
+
+    .section-intro {
+      max-width: 710px;
+      margin-bottom: 40px;
+    }
+
+    .section-intro p {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .service-card {
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 30px 24px;
+      position: relative;
+      overflow: hidden;
+      transition: .25s;
+    }
+
+    .service-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--teal);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: .25s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 35px rgba(7,27,49,.09);
+    }
+
+    .service-card:hover::before { transform: scaleX(1); }
+
+    .service-number {
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: var(--blue);
+      margin-bottom: 30px;
+    }
+
+    .service-card h3 {
+      font-size: 21px;
+      margin-bottom: 14px;
+      color: var(--navy);
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    /* EQUIPAMENTOS */
+
+    .equipment-section {
+      background: var(--light);
+    }
+
+    .equipment-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 35px;
+    }
+
+    .equipment-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: white;
+      border: 1px solid var(--border);
+      padding: 23px 21px;
+      border-radius: 7px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .equipment-icon {
+      flex-shrink: 0;
+      width: 29px;
+      height: 29px;
+      display: grid;
+      place-items: center;
+      background: #e1f4f2;
+      border-radius: 50%;
+      color: #087b78;
+      font-size: 17px;
+      font-weight: 900;
+    }
+
+    .equipment-note {
+      margin-top: 23px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* SOBRE A EMPRESA */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .about-panel {
+      min-height: 385px;
+      background: linear-gradient(145deg, #0c4160, #071b31);
+      border-radius: 10px;
+      color: white;
+      padding: 45px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-panel::after {
+      content: "CT";
+      position: absolute;
+      right: -25px;
+      bottom: -90px;
+      font-weight: 900;
+      font-size: 230px;
+      opacity: .07;
+    }
+
+    .about-panel small {
+      color: var(--teal);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    .about-panel h3 {
+      font-size: 33px;
+      max-width: 290px;
+      line-height: 1.2;
+    }
+
+    .about-panel p {
+      color: #c1d6df;
+      font-size: 14px;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      font-size: 16px;
+      margin-bottom: 19px;
+    }
+
+    .about-points {
+      margin-top: 25px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .about-point {
+      padding-left: 18px;
+      border-left: 3px solid var(--teal);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    /* CONTATO */
+
+    .contact-section {
+      background: var(--navy);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 75px;
+      align-items: center;
+    }
+
+    .contact-section .eyebrow { color: var(--teal); }
+
+    .contact-section h2 {
+      font-size: clamp(33px, 4vw, 51px);
+    }
+
+    .contact-section h2 span { color: var(--teal); }
+
+    .contact-section p {
+      color: #c0d3dc;
+      max-width: 570px;
+      margin-bottom: 29px;
+    }
+
+    .contact-box {
+      padding: 30px;
+      border: 1px solid #385269;
+      border-radius: 9px;
+      background: rgba(255,255,255,.04);
+    }
+
+    .contact-box h3 {
+      font-size: 17px;
+      margin-bottom: 20px;
+    }
+
+    .contact-line {
+      padding: 13px 0;
+      border-top: 1px solid #385269;
+      font-size: 14px;
+    }
+
+    .contact-line small {
+      display: block;
+      color: var(--teal);
+      font-size: 11px;
+      margin-bottom: 3px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .contact-line a:hover { color: var(--teal); }
+
+    /* RODAPÉ */
+
+    .footer {
+      background: #051425;
+      color: #92a9b8;
+      padding: 30px 0;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      font-size: 12px;
+    }
+
+    .footer strong {
+      color: var(--white);
+      font-size: 19px;
+      letter-spacing: 2px;
+    }
+
+    .footer a:hover { color: var(--teal); }
+
+    /* CELULARES E TABLETS */
+
+    @media (max-width: 950px) {
+      .services { grid-template-columns: repeat(2, 1fr); }
+      .hero-grid { gap: 20px; }
+      .about-grid { gap: 35px; }
+      .nav-links { gap: 16px; }
+    }
+
+    @media (max-width: 720px) {
+      .nav-wrap { min-height: 70px; }
+
+      .menu-button { display: block; }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        padding: 24px 5%;
+        background: var(--navy);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        border-bottom: 1px solid #426176;
+      }
+
+      .nav-links.open { display: flex; }
+
+      .nav-links a {
+        padding: 14px 5px;
+        display: block;
+      }
+
+      .nav-links .nav-cta {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .hero { padding: 70px 0 65px; }
+
+      .hero-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 { letter-spacing: -1.5px; }
+
+      .hero-description { font-size: 15px; }
+
+      .hero-visual { min-height: 320px; }
+
+      .visual-ring {
+        width: 280px;
+        height: 280px;
+      }
+
+      .visual-label { bottom: 0; }
+
+      .features-grid { grid-template-columns: 1fr; }
+
+      .feature {
+        justify-content: flex-start;
+        border-right: 0;
+        border-bottom: 1px solid rgba(255,255,255,.12);
+      }
+
+      .section { padding: 70px 0; }
+
+      .equipment-grid { grid-template-columns: repeat(2, 1fr); }
+
+      .about-panel { min-height: 280px; }
+
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .services,
+      .equipment-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-actions { flex-direction: column; }
+      .hero-actions .btn { width: 100%; }
+      .service-card { padding: 25px; }
+      .brand-name { font-size: 21px; }
+      .about-panel { padding: 30px; }
+      .visual-label { right: 0; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- MENU -->
+
+  <header class="header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="ChefTec - Início">
+        <div class="brand-symbol">CT</div>
+        <div>
+          <span class="brand-name">CHEFTEC</span>
+          <span class="brand-caption">Soluções para cozinhas industriais</span>
+        </div>
+      </a>
+
+      <button class="menu-button" id="menuButton"
+        aria-label="Abrir menu" aria-expanded="false"
+        aria-controls="navLinks">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#equipamentos">Equipamentos</a>
+        <a href="#sobre">Sobre nós</a>
+        <a class="nav-cta" href="#contato">Fale conosco ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- APRESENTAÇÃO PRINCIPAL -->
+
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+
+        <div>
+          <div class="eyebrow">ChefTec • João Pessoa - PB</div>
+
+          <h1>
+            Sua cozinha não pode parar.
+            <span>A ChefTec tem a solução.</span>
+          </h1>
+
+          <p class="hero-description">
+            Manutenção, instalação, assistência técnica e
+            venda de equipamentos para restaurantes
+            e cozinhas industriais.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary"
+              href="https://wa.me/5583993097113?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20atendimento%20da%20ChefTec."
+              target="_blank" rel="noopener noreferrer">
+              Solicitar atendimento ↗
+            </a>
+
+            <a class="btn btn-outline" href="#servicos">
+              Conheça nossos serviços →
+            </a>
+          </div>
+
+          <p class="hero-note">
+            MANUTENÇÃO • INSTALAÇÃO • ASSISTÊNCIA TÉCNICA
+          </p>
+        </div>
+
+        <!-- ILUSTRAÇÃO DE EQUIPAMENTO INDUSTRIAL -->
+
+        <div class="hero-visual">
+          <div class="visual-ring"></div>
+
+          <svg class="oven-illustration" viewBox="0 0 480 440"
+            role="img" aria-label="Ilustração de forno industrial">
+
+            <defs>
+              <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#e6eff2"/>
+                <stop offset=".45" stop-color="#8ca8b7"/>
+                <stop offset="1" stop-color="#d1dfe5"/>
+              </linearGradient>
+              <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#193b55"/>
+                <stop offset="1" stop-color="#061827"/>
+              </linearGradient>
+            </defs>
+
+            <ellipse cx="245" cy="398" rx="175" ry="22"
+              fill="#000" opacity=".2"/>
+
+            <rect x="68" y="35" width="345" height="345"
+              rx="17" fill="url(#steel)"/>
+
+            <rect x="81" y="49" width="237" height="305"
+              rx="9" fill="#29455a"/>
+
+            <rect x="96" y="65" width="207" height="271"
+              rx="5" fill="url(#glass)"
+              stroke="#6f9eb0" stroke-width="3"/>
+
+            <path d="M112 90 H287 M112 142 H287
+              M112 194 H287 M112 246 H287 M112 298 H287"
+              stroke="#517488" stroke-width="3" opacity=".75"/>
+
+            <path d="M138 65 L232 65 L125 336 L96 336 Z"
+              fill="#fff" opacity=".055"/>
+
+            <rect x="318" y="49" width="82" height="305"
+              rx="5" fill="#bacdd5"/>
+
+            <rect x="330" y="72" width="59" height="55"
+              rx="4" fill="#102b41"/>
+
+            <rect x="339" y="84" width="40" height="11"
+              rx="2" fill="#62b9b4"/>
+
+            <rect x="339" y="103" width="25" height="5"
+              rx="2" fill="#567b89"/>
+
+            <circle cx="357" cy="172" r="19" fill="#27465b"/>
+            <circle cx="357" cy="172" r="11" fill="#91b6c0"/>
+            <circle cx="357" cy="234" r="19" fill="#27465b"/>
+            <circle cx="357" cy="234" r="11" fill="#91b6c0"/>
+
+            <circle cx="357" cy="285" r="8" fill="#62b9b4"/>
+
+            <rect x="113" y="367" width="35" height="30"
+              rx="3" fill="#708d9e"/>
+            <rect x="336" y="367" width="35" height="30"
+              rx="3" fill="#708d9e"/>
+
+            <path d="M82 49 L82 353 M410 49 L410 353"
+              stroke="#fff" stroke-width="4" opacity=".4"/>
+
+            <rect x="99" y="77" width="9" height="240"
+              rx="4" fill="#c7e0e5"/>
+          </svg>
+
+          <div class="visual-label">
+            <strong>Equipamentos profissionais</strong>
+            <span>Soluções para cozinhas industriais</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+
+    <div class="features">
+      <div class="container features-grid">
+        <div class="feature"><span>⚙</span> Manutenção especializada</div>
+        <div class="feature"><span>◇</span> Segurança e confiança</div>
+        <div class="feature"><span>✓</span> Agilidade e eficiência</div>
+      </div>
+    </div>
+
+    <!-- SERVIÇOS -->
+
+    <section class="section" id="servicos">
+      <div class="container">
+
+        <div class="section-intro">
+          <div class="eyebrow">O que fazemos</div>
+          <h2>Soluções técnicas para sua cozinha profissional.</h2>
+          <p>
+            Da instalação à manutenção, a ChefTec oferece
+            serviços para cuidar dos equipamentos essenciais
+            ao funcionamento do seu estabelecimento.
+          </p>
+        </div>
+
+        <div class="services">
+
+          <article class="service-card">
+            <div class="service-number">01 / MANUTENÇÃO</div>
+            <h3>Manutenção de equipamentos</h3>
+            <p>
+              Serviços de manutenção e reparo de equipamentos
+              utilizados em restaurantes e cozinhas industriais.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">02 / INSTALAÇÃO</div>
+            <h3>Instalação profissional</h3>
+            <p>
+              Instalação de equipamentos de cozinha profissional,
+              com atenção às necessidades de cada operação.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">03 / ASSISTÊNCIA</div>
+            <h3>Assistência técnica</h3>
+            <p>
+              Avaliação de problemas e soluções técnicas para
+              equipamentos de cozinhas comerciais e industriais.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">04 / EQUIPAMENTOS</div>
+            <h3>Venda de maquinário</h3>
+            <p>
+              Equipamentos para cozinhas profissionais.
+              Entre em contato para consultar opções
+              e disponibilidade.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EQUIPAMENTOS ATENDIDOS -->
+
+    <section class="section equipment-section" id="equipamentos">
+      <div class="container">
+
+        <div class="section-intro">
+          <div class="eyebrow">Nossa especialidade</div>
+          <h2>Equipamentos que atendemos.</h2>
+          <p>
+            Conheça alguns dos equipamentos para os quais
+            a ChefTec oferece serviços técnicos.
+          </p>
+        </div>
+
+        <div class="equipment-grid">
+          <div class="equipment-item">
+            <span class="equipment-icon">✓</span>
+            Lavadoras de louças industriais
+          </div>
+
+          <div class="equipment-item">
+            <span class="equipment-icon">✓</span>
+            Fritadeiras elétricas e a gás
+          </div>
+
+          <div class="equipment-item">
+            <span class="equipment-icon">✓</span>
+            Liquidificadores industriais
+          </div>
+
+          <div class="equipment-item">
+            <span class="equipment-icon">✓</span>
+            Chapas e char broilers
+          </div>
+
+          <div class="equipment-item">
+            <span class="equipment-icon">✓</span>
+            Máquinas de embalar a vácuo
+          </div>
+
+          <div class="equipment-item">
+            <span class="equipment-icon">✓</span>
+            Fornos combinados
+          </div>
+        </div>
+
+        <p class="equipment-note">
+          Outros tipos de equipamentos também podem ser
+          avaliados mediante consulta.
+        </p>
+      </div>
+    </section>
+
+    <!-- SOBRE A CHEFTEC -->
+
+    <section class="section" id="sobre">
+      <div class="container about-grid">
+
+        <div class="about-panel">
+          <small>ChefTec</small>
+          <h3>Seu equipamento em boas mãos.</h3>
+          <p>
+            Reparo, instalação e assistência técnica
+            para cozinhas industriais.
+          </p>
+        </div>
+
+        <div class="about-text">
+          <div class="eyebrow">Sobre nós</div>
+
+          <h2>Compromisso com o funcionamento da sua cozinha.</h2>
+
+          <p>
+            A ChefTec atua no segmento de equipamentos
+            para cozinhas industriais, oferecendo serviços
+            de manutenção, instalação e assistência técnica.
+          </p>
+
+          <p>
+            Sabemos que os equipamentos têm um papel
+            fundamental na rotina de restaurantes e
+            estabelecimentos do setor alimentício.
+            Por isso, nosso trabalho é direcionado
+            às necessidades de cada cliente.
+          </p>
+
+          <div class="about-points">
+            <div class="about-point">
+              Atendimento para equipamentos profissionais
+            </div>
+            <div class="about-point">
+              Manutenção, instalação e assistência técnica
+            </div>
+            <div class="about-point">
+              Venda de equipamentos para cozinhas industriais
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+
+    <section class="section contact-section" id="contato">
+      <div class="container contact-grid">
+
+        <div>
+          <div class="eyebrow">Fale com a ChefTec</div>
+
+          <h2>
+            Precisa de assistência para sua cozinha?
+            <span>Conte com a ChefTec.</span>
+          </h2>
+
+          <p>
+            Entre em contato para consultar nossos serviços,
+            solicitar atendimento técnico ou obter informações
+            sobre equipamentos para sua cozinha.
+          </p>
+
+          <a class="btn btn-primary"
+            href="https://wa.me/5583993097113?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20atendimento%20da%20ChefTec."
+            target="_blank" rel="noopener noreferrer">
+            Conversar pelo WhatsApp ↗
+          </a>
+        </div>
+
+        <div class="contact-box">
+          <h3>Informações de contato</h3>
+
+          <div class="contact-line">
+            <small>WhatsApp</small>
+            <a href="https://wa.me/5583993097113"
+              target="_blank" rel="noopener noreferrer">
+              (83) 99309-7113
+            </a>
+          </div>
+
+          <div class="contact-line">
+            <small>Instagram</small>
+            <a href="https://www.instagram.com/cheftec_cozinhas/"
+              target="_blank" rel="noopener noreferrer">
+              @cheftec_cozinhas
+            </a>
+          </div>
+
+          <div class="contact-line">
+            <small>Localização</small>
+            João Pessoa — Paraíba
+          </div>
+
+          <div class="contact-line">
+            <small>Website</small>
+            cheftec.com.br
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <strong>CHEFTEC</strong>
+
+      <span>
+        © <span id="year"></span> ChefTec.
+        Todos os direitos reservados.
+      </span>
+
+      <a href="#inicio">Voltar ao início ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    // Atualiza automaticamente o ano do rodapé.
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    // Abre e fecha o menu em celulares.
+    const menuButton = document.getElementById("menuButton");
+    const navLinks = document.getElementById("navLinks");
+
+    menuButton.addEventListener("click", function() {
+      const aberto = navLinks.classList.toggle("open");
+
+      menuButton.setAttribute("aria-expanded", aberto);
+      menuButton.setAttribute(
+        "aria-label",
+        aberto ? "Fechar menu" : "Abrir menu"
+      );
+      menuButton.textContent = aberto ? "×" : "☰";
+    });
+
+    // Fecha o menu após escolher uma seção.
+    navLinks.querySelectorAll("a").forEach(function(link) {
+      link.addEventListener("click", function() {
+        navLinks.classList.remove("open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Abrir menu");
+        menuButton.textContent = "☰";
+      });
+    });
+  </script>
+
+</body>
+</html>
