@@ -1,20 +1,24 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#071b31">
-  <meta name="description" content="ChefTec: manutenção, instalação, assistência técnica e venda de equipamentos para restaurantes e cozinhas industriais em João Pessoa - PB.">
+
+  <meta
+    name="description"
+    content="ChefTec: manutenção, instalação, assistência técnica e venda de equipamentos para restaurantes e cozinhas industriais em João Pessoa - PB."
+  >
 
   <title>ChefTec | Soluções para Cozinhas Industriais</title>
 
   <link rel="icon" type="image/png" href="logo-cheftec.png">
 
   <style>
-    /* =============================
-       CONFIGURAÇÕES GERAIS
-    ============================= */
+
+    /* CONFIGURAÇÕES GERAIS */
 
     :root {
       --navy: #071b31;
@@ -49,8 +53,8 @@
     }
 
     a {
-      text-decoration: none;
       color: inherit;
+      text-decoration: none;
     }
 
     button {
@@ -140,9 +144,7 @@
       outline-offset: 3px;
     }
 
-    /* =============================
-       CABEÇALHO E LOGOTIPO
-    ============================= */
+    /* CABEÇALHO */
 
     .header {
       position: sticky;
@@ -234,9 +236,7 @@
       cursor: pointer;
     }
 
-    /* =============================
-       PRIMEIRA SEÇÃO - HERO
-    ============================= */
+    /* SEÇÃO PRINCIPAL */
 
     .hero {
       position: relative;
@@ -252,6 +252,7 @@
           #071b31,
           #0c2945
         );
+
       color: var(--white);
       padding: 95px 0 100px;
     }
@@ -270,6 +271,7 @@
           rgba(255,255,255,.025) 1px,
           transparent 1px
         );
+
       background-size: 52px 52px;
       pointer-events: none;
     }
@@ -317,10 +319,7 @@
       letter-spacing: .8px;
     }
 
-    /* =============================
-       FORNO INDUSTRIAL
-       SEM QUADRO BRANCO
-    ============================= */
+    /* ILUSTRAÇÃO DA LAVA-LOUÇAS INDUSTRIAL */
 
     .hero-visual {
       min-height: 405px;
@@ -338,12 +337,13 @@
       max-width: 90%;
       border: 1px solid rgba(98,185,180,.32);
       border-radius: 50%;
+
       box-shadow:
         0 0 0 37px rgba(98,185,180,.035),
         0 0 0 76px rgba(98,185,180,.025);
     }
 
-    .oven-illustration {
+    .machine-illustration {
       width: 100%;
       max-width: 465px;
       height: auto;
@@ -354,9 +354,7 @@
       );
     }
 
-    /* =============================
-       DIFERENCIAIS
-    ============================= */
+    /* DIFERENCIAIS */
 
     .features {
       background: #0b304b;
@@ -391,9 +389,7 @@
       font-size: 23px;
     }
 
-    /* =============================
-       SERVIÇOS
-    ============================= */
+    /* SERVIÇOS */
 
     .section-intro {
       max-width: 710px;
@@ -456,9 +452,7 @@
       line-height: 1.7;
     }
 
-    /* =============================
-       EQUIPAMENTOS
-    ============================= */
+    /* EQUIPAMENTOS */
 
     .equipment-section {
       background: var(--light);
@@ -502,9 +496,7 @@
       font-size: 13px;
     }
 
-    /* =============================
-       SOBRE A EMPRESA
-    ============================= */
+    /* SOBRE A EMPRESA */
 
     .about-grid {
       display: grid;
@@ -577,9 +569,7 @@
       font-weight: 700;
     }
 
-    /* =============================
-       CONTATO
-    ============================= */
+    /* CONTATO */
 
     .contact-section {
       background: var(--navy);
@@ -642,9 +632,7 @@
       color: var(--teal);
     }
 
-    /* =============================
-       RODAPÉ
-    ============================= */
+    /* RODAPÉ */
 
     .footer {
       background: #051425;
@@ -670,9 +658,7 @@
       color: var(--teal);
     }
 
-    /* =============================
-       BOTÕES FLUTUANTES
-    ============================= */
+    /* BOTÕES FLUTUANTES */
 
     .floating-social {
       position: fixed;
@@ -700,8 +686,6 @@
       display: block;
     }
 
-    /* INSTAGRAM - LADO ESQUERDO */
-
     .floating-instagram {
       left: calc(20px + env(safe-area-inset-left));
 
@@ -715,16 +699,12 @@
       );
     }
 
-    /* WHATSAPP - LADO DIREITO */
-
     .floating-whatsapp {
       right: calc(20px + env(safe-area-inset-right));
       background: #25d366;
     }
 
-    /* =============================
-       RESPONSIVIDADE - TABLETS
-    ============================= */
+    /* RESPONSIVIDADE - TABLETS */
 
     @media (max-width: 1000px) {
 
@@ -746,9 +726,7 @@
 
     }
 
-    /* =============================
-       RESPONSIVIDADE - CELULARES
-    ============================= */
+    /* RESPONSIVIDADE - CELULARES */
 
     @media (max-width: 760px) {
 
@@ -831,7 +809,7 @@
         min-height: 315px;
       }
 
-      .oven-illustration {
+      .machine-illustration {
         max-width: 360px;
       }
 
@@ -877,9 +855,7 @@
 
     }
 
-    /* =============================
-       CELULARES PEQUENOS
-    ============================= */
+    /* RESPONSIVIDADE - CELULARES PEQUENOS */
 
     @media (max-width: 480px) {
 
@@ -921,7 +897,7 @@
         min-height: 270px;
       }
 
-      .oven-illustration {
+      .machine-illustration {
         max-width: 320px;
       }
 
@@ -964,6 +940,7 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
+
       html {
         scroll-behavior: auto;
       }
@@ -972,6 +949,7 @@
       .floating-social {
         transition: none;
       }
+
     }
 
   </style>
@@ -979,15 +957,17 @@
 
 <body>
 
-  <!-- =============================
-       CABEÇALHO
-  ============================= -->
+  <!-- CABEÇALHO -->
 
   <header class="header">
+
     <div class="container nav-wrap">
 
-      <a class="brand" href="#inicio"
-         aria-label="ChefTec - Início">
+      <a
+        class="brand"
+        href="#inicio"
+        aria-label="ChefTec - Início"
+      >
 
         <img
           class="brand-logo"
@@ -998,11 +978,17 @@
         >
 
         <div>
-          <span class="brand-name">CHEFTEC</span>
+
+          <span class="brand-name">
+            CHEFTEC
+          </span>
+
           <span class="brand-caption">
             Soluções para cozinhas industriais
           </span>
+
         </div>
+
       </a>
 
       <button
@@ -1014,26 +1000,36 @@
         aria-controls="navLinks"
       >☰</button>
 
-      <nav class="nav-links" id="navLinks"
-           aria-label="Menu principal">
+      <nav
+        class="nav-links"
+        id="navLinks"
+        aria-label="Menu principal"
+      >
 
         <a href="#inicio">Início</a>
         <a href="#servicos">Serviços</a>
         <a href="#equipamentos">Equipamentos</a>
         <a href="#sobre">Sobre nós</a>
-        <a class="nav-cta" href="#contato">Fale conosco ↗</a>
+
+        <a
+          class="nav-cta"
+          href="#contato"
+        >
+          Fale conosco ↗
+        </a>
 
       </nav>
+
     </div>
+
   </header>
 
   <main>
 
-    <!-- =============================
-         SEÇÃO PRINCIPAL
-    ============================= -->
+    <!-- SEÇÃO PRINCIPAL -->
 
     <section class="hero" id="inicio">
+
       <div class="container hero-grid">
 
         <div>
@@ -1064,7 +1060,10 @@
               Solicitar atendimento ↗
             </a>
 
-            <a class="btn btn-outline" href="#servicos">
+            <a
+              class="btn btn-outline"
+              href="#servicos"
+            >
               Conheça nossos serviços →
             </a>
 
@@ -1076,115 +1075,353 @@
 
         </div>
 
-        <!-- FORNO INDUSTRIAL SEM QUADRO BRANCO -->
+        <!-- LAVA-LOUÇAS INDUSTRIAL DE CAPOTA -->
 
         <div class="hero-visual">
 
-          <div class="visual-ring" aria-hidden="true"></div>
+          <div
+            class="visual-ring"
+            aria-hidden="true"
+          ></div>
 
           <svg
-            class="oven-illustration"
+            class="machine-illustration"
             viewBox="0 0 480 440"
             role="img"
-            aria-label="Ilustração de forno industrial"
+            aria-label="Ilustração de lava-louças industrial de capota"
           >
 
             <defs>
-              <linearGradient id="steel"
-                x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#e6eff2"/>
-                <stop offset=".45" stop-color="#8ca8b7"/>
-                <stop offset="1" stop-color="#d1dfe5"/>
+
+              <linearGradient
+                id="inox"
+                x1="0" y1="0"
+                x2="1" y2="1"
+              >
+                <stop offset="0" stop-color="#f2f8fa"/>
+                <stop offset=".45" stop-color="#9fb9c5"/>
+                <stop offset="1" stop-color="#668b9d"/>
               </linearGradient>
 
-              <linearGradient id="glass"
-                x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#193b55"/>
-                <stop offset="1" stop-color="#061827"/>
+              <linearGradient
+                id="inoxClaro"
+                x1="0" y1="0"
+                x2="1" y2="0"
+              >
+                <stop offset="0" stop-color="#9eb9c5"/>
+                <stop offset=".5" stop-color="#edf6f8"/>
+                <stop offset="1" stop-color="#7a9aa9"/>
               </linearGradient>
+
+              <linearGradient
+                id="interior"
+                x1="0" y1="0"
+                x2="0" y2="1"
+              >
+                <stop offset="0" stop-color="#1e455c"/>
+                <stop offset="1" stop-color="#081b2e"/>
+              </linearGradient>
+
+              <linearGradient
+                id="capota"
+                x1="0" y1="0"
+                x2="1" y2="1"
+              >
+                <stop offset="0" stop-color="#e7f1f5"/>
+                <stop offset=".55" stop-color="#a6c1cc"/>
+                <stop offset="1" stop-color="#6f93a4"/>
+              </linearGradient>
+
             </defs>
 
-            <ellipse cx="245" cy="398" rx="175" ry="22"
-              fill="#000" opacity=".2"/>
+            <!-- SOMBRA -->
 
-            <rect x="68" y="35" width="345" height="345"
-              rx="17" fill="url(#steel)"/>
+            <ellipse
+              cx="241"
+              cy="406"
+              rx="165"
+              ry="20"
+              fill="#000"
+              opacity=".23"
+            />
 
-            <rect x="81" y="49" width="237" height="305"
-              rx="9" fill="#29455a"/>
+            <!-- ESTRUTURA TRASEIRA -->
 
-            <rect x="96" y="65" width="207" height="271"
-              rx="5" fill="url(#glass)"
-              stroke="#6f9eb0" stroke-width="3"/>
+            <rect
+              x="108" y="90"
+              width="18" height="288"
+              rx="6"
+              fill="#64879a"
+            />
+
+            <rect
+              x="363" y="90"
+              width="18" height="288"
+              rx="6"
+              fill="#547a8d"
+            />
+
+            <!-- ÁREA INTERNA DE LAVAGEM -->
+
+            <rect
+              x="119" y="183"
+              width="251" height="146"
+              rx="7"
+              fill="url(#interior)"
+              stroke="#7298a9"
+              stroke-width="5"
+            />
 
             <path
-              d="M112 90 H287 M112 142 H287
-                 M112 194 H287 M112 246 H287 M112 298 H287"
-              stroke="#517488"
+              d="M133 199 H355 V311 H133 Z"
+              fill="#102f45"
+            />
+
+            <!-- JATOS DE ÁGUA -->
+
+            <g
+              stroke="#6cd9d1"
               stroke-width="3"
-              opacity=".75"
+              stroke-linecap="round"
+              opacity=".65"
+            >
+
+              <path d="M170 205 L161 225"/>
+              <path d="M212 205 L203 223"/>
+              <path d="M254 205 L245 225"/>
+              <path d="M296 205 L287 223"/>
+              <path d="M336 205 L327 225"/>
+
+            </g>
+
+            <!-- CESTO DE LOUÇAS -->
+
+            <rect
+              x="143" y="268"
+              width="204" height="45"
+              rx="4"
+              fill="#547e8e"
+              stroke="#b8d5de"
+              stroke-width="3"
             />
 
+            <!-- PRATOS -->
+
+            <g
+              fill="#d6eaf0"
+              stroke="#8eb8c7"
+              stroke-width="3"
+            >
+
+              <ellipse cx="173" cy="257" rx="14" ry="39"/>
+              <ellipse cx="206" cy="257" rx="14" ry="39"/>
+              <ellipse cx="239" cy="257" rx="14" ry="39"/>
+              <ellipse cx="272" cy="257" rx="14" ry="39"/>
+              <ellipse cx="305" cy="257" rx="14" ry="39"/>
+
+            </g>
+
+            <!-- DETALHES DOS PRATOS -->
+
+            <g
+              stroke="#ffffff"
+              stroke-width="2"
+              opacity=".65"
+              fill="none"
+            >
+
+              <ellipse cx="173" cy="257" rx="7" ry="27"/>
+              <ellipse cx="206" cy="257" rx="7" ry="27"/>
+              <ellipse cx="239" cy="257" rx="7" ry="27"/>
+              <ellipse cx="272" cy="257" rx="7" ry="27"/>
+              <ellipse cx="305" cy="257" rx="7" ry="27"/>
+
+            </g>
+
+            <!-- GRADE DO CESTO -->
+
+            <g
+              stroke="#c1dce3"
+              stroke-width="3"
+              opacity=".85"
+            >
+
+              <path d="M160 273 V311"/>
+              <path d="M190 273 V311"/>
+              <path d="M220 273 V311"/>
+              <path d="M250 273 V311"/>
+              <path d="M280 273 V311"/>
+              <path d="M310 273 V311"/>
+              <path d="M337 273 V311"/>
+
+            </g>
+
             <path
-              d="M138 65 L232 65 L125 336 L96 336 Z"
-              fill="#fff"
-              opacity=".055"
+              d="M145 286 H346 M145 301 H346"
+              stroke="#abcbd3"
+              stroke-width="2"
             />
 
-            <rect x="318" y="49" width="82" height="305"
-              rx="5" fill="#bacdd5"/>
+            <!-- CAPOTA SUPERIOR -->
 
-            <rect x="330" y="72" width="59" height="55"
-              rx="4" fill="#102b41"/>
-
-            <rect x="339" y="84" width="40" height="11"
-              rx="2" fill="#62b9b4"/>
-
-            <rect x="339" y="103" width="25" height="5"
-              rx="2" fill="#567b89"/>
-
-            <circle cx="357" cy="172" r="19"
-              fill="#27465b"/>
-
-            <circle cx="357" cy="172" r="11"
-              fill="#91b6c0"/>
-
-            <circle cx="357" cy="234" r="19"
-              fill="#27465b"/>
-
-            <circle cx="357" cy="234" r="11"
-              fill="#91b6c0"/>
-
-            <circle cx="357" cy="285" r="8"
-              fill="#62b9b4"/>
-
-            <rect x="113" y="367" width="35" height="30"
-              rx="3" fill="#708d9e"/>
-
-            <rect x="336" y="367" width="35" height="30"
-              rx="3" fill="#708d9e"/>
-
-            <path
-              d="M82 49 L82 353 M410 49 L410 353"
-              stroke="#fff"
+            <rect
+              x="112" y="70"
+              width="266" height="130"
+              rx="10"
+              fill="url(#capota)"
+              stroke="#d8e8ed"
               stroke-width="4"
-              opacity=".4"
             />
 
-            <rect x="99" y="77" width="9" height="240"
-              rx="4" fill="#c7e0e5"/>
+            <path
+              d="M125 84 H364"
+              stroke="#ffffff"
+              stroke-width="5"
+              opacity=".65"
+            />
+
+            <rect
+              x="129" y="97"
+              width="232" height="75"
+              rx="5"
+              fill="#a9c3cd"
+              opacity=".45"
+            />
+
+            <!-- REFLEXO METÁLICO -->
+
+            <path
+              d="M147 88 L193 88 L158 181 L128 181 Z"
+              fill="#ffffff"
+              opacity=".13"
+            />
+
+            <!-- ALÇA DA CAPOTA -->
+
+            <rect
+              x="163" y="169"
+              width="164" height="12"
+              rx="6"
+              fill="#294b5e"
+            />
+
+            <rect
+              x="174" y="171"
+              width="142" height="4"
+              rx="2"
+              fill="#8fb9c6"
+            />
+
+            <!-- PAINEL INFERIOR -->
+
+            <rect
+              x="112" y="326"
+              width="266" height="53"
+              rx="7"
+              fill="url(#inox)"
+              stroke="#d3e6eb"
+              stroke-width="3"
+            />
+
+            <!-- IDENTIFICAÇÃO -->
+
+            <rect
+              x="127" y="338"
+              width="143" height="25"
+              rx="4"
+              fill="#173950"
+            />
+
+            <text
+              x="198"
+              y="354"
+              text-anchor="middle"
+              font-family="Arial, sans-serif"
+              font-size="10"
+              font-weight="bold"
+              fill="#e2f5f6"
+              letter-spacing="1"
+            >
+              LAVA-LOUÇAS
+            </text>
+
+            <!-- CONTROLES -->
+
+            <circle
+              cx="299" cy="351"
+              r="10"
+              fill="#27475a"
+            />
+
+            <circle
+              cx="299" cy="351"
+              r="5"
+              fill="#67c5bf"
+            />
+
+            <circle
+              cx="338" cy="351"
+              r="10"
+              fill="#27475a"
+            />
+
+            <circle
+              cx="338" cy="351"
+              r="5"
+              fill="#d4e5ec"
+            />
+
+            <!-- PÉS METÁLICOS -->
+
+            <rect
+              x="139" y="377"
+              width="30" height="25"
+              rx="3"
+              fill="#688b9c"
+            />
+
+            <rect
+              x="322" y="377"
+              width="30" height="25"
+              rx="3"
+              fill="#688b9c"
+            />
+
+            <rect
+              x="136" y="397"
+              width="36" height="8"
+              rx="3"
+              fill="#2a495a"
+            />
+
+            <rect
+              x="319" y="397"
+              width="36" height="8"
+              rx="3"
+              fill="#2a495a"
+            />
+
+            <!-- ACABAMENTO -->
+
+            <path
+              d="M119 92 V363"
+              stroke="#ffffff"
+              stroke-width="3"
+              opacity=".35"
+            />
 
           </svg>
 
         </div>
+
       </div>
+
     </section>
 
-    <!-- =============================
-         DIFERENCIAIS
-    ============================= -->
+    <!-- DIFERENCIAIS -->
 
     <div class="features">
+
       <div class="container features-grid">
 
         <div class="feature">
@@ -1203,18 +1440,20 @@
         </div>
 
       </div>
+
     </div>
 
-    <!-- =============================
-         SERVIÇOS
-    ============================= -->
+    <!-- SERVIÇOS -->
 
     <section class="section" id="servicos">
+
       <div class="container">
 
         <div class="section-intro">
 
-          <div class="eyebrow">O que fazemos</div>
+          <div class="eyebrow">
+            O que fazemos
+          </div>
 
           <h2>
             Soluções técnicas para sua cozinha profissional.
@@ -1231,68 +1470,100 @@
         <div class="services">
 
           <article class="service-card">
-            <div class="service-number">01 / MANUTENÇÃO</div>
 
-            <h3>Manutenção de equipamentos</h3>
+            <div class="service-number">
+              01 / MANUTENÇÃO
+            </div>
+
+            <h3>
+              Manutenção de equipamentos
+            </h3>
 
             <p>
               Serviços de manutenção e reparo de equipamentos
               utilizados em restaurantes e cozinhas industriais.
             </p>
+
           </article>
 
           <article class="service-card">
-            <div class="service-number">02 / INSTALAÇÃO</div>
 
-            <h3>Instalação profissional</h3>
+            <div class="service-number">
+              02 / INSTALAÇÃO
+            </div>
+
+            <h3>
+              Instalação profissional
+            </h3>
 
             <p>
               Instalação de equipamentos de cozinha
               profissional, com atenção às necessidades
               de cada operação.
             </p>
+
           </article>
 
           <article class="service-card">
-            <div class="service-number">03 / ASSISTÊNCIA</div>
 
-            <h3>Assistência técnica</h3>
+            <div class="service-number">
+              03 / ASSISTÊNCIA
+            </div>
+
+            <h3>
+              Assistência técnica
+            </h3>
 
             <p>
               Avaliação de problemas e soluções técnicas
               para equipamentos de cozinhas comerciais
               e industriais.
             </p>
+
           </article>
 
           <article class="service-card">
-            <div class="service-number">04 / EQUIPAMENTOS</div>
 
-            <h3>Venda de maquinário</h3>
+            <div class="service-number">
+              04 / EQUIPAMENTOS
+            </div>
+
+            <h3>
+              Venda de maquinário
+            </h3>
 
             <p>
               Equipamentos para cozinhas profissionais.
               Entre em contato para consultar opções
               e disponibilidade.
             </p>
+
           </article>
 
         </div>
+
       </div>
+
     </section>
 
-    <!-- =============================
-         EQUIPAMENTOS ATENDIDOS
-    ============================= -->
+    <!-- EQUIPAMENTOS -->
 
-    <section class="section equipment-section" id="equipamentos">
+    <section
+      class="section equipment-section"
+      id="equipamentos"
+    >
+
       <div class="container">
 
         <div class="section-intro">
 
-          <div class="eyebrow">Nossa especialidade</div>
+          <div class="eyebrow">
+            Nossa especialidade
+          </div>
 
-          <h2>Equipamentos que atendemos.</h2>
+          <h2>
+            Equipamentos que atendemos.
+          </h2>
 
           <p>
             Conheça alguns dos equipamentos para os quais
@@ -1341,20 +1612,22 @@
         </p>
 
       </div>
+
     </section>
 
-    <!-- =============================
-         SOBRE A EMPRESA
-    ============================= -->
+    <!-- SOBRE A EMPRESA -->
 
     <section class="section" id="sobre">
+
       <div class="container about-grid">
 
         <div class="about-panel">
 
           <small>ChefTec</small>
 
-          <h3>Seu equipamento em boas mãos.</h3>
+          <h3>
+            Seu equipamento em boas mãos.
+          </h3>
 
           <p>
             Reparo, instalação e assistência técnica
@@ -1365,7 +1638,9 @@
 
         <div class="about-text">
 
-          <div class="eyebrow">Sobre nós</div>
+          <div class="eyebrow">
+            Sobre nós
+          </div>
 
           <h2>
             Compromisso com o funcionamento da sua cozinha.
@@ -1400,21 +1675,24 @@
             </div>
 
           </div>
+
         </div>
 
       </div>
+
     </section>
 
-    <!-- =============================
-         CONTATO
-    ============================= -->
+    <!-- CONTATO -->
 
     <section class="section contact-section" id="contato">
+
       <div class="container contact-grid">
 
         <div>
 
-          <div class="eyebrow">Fale com a ChefTec</div>
+          <div class="eyebrow">
+            Fale com a ChefTec
+          </div>
 
           <h2>
             Precisa de assistência para sua cozinha?
@@ -1440,9 +1718,12 @@
 
         <div class="contact-box">
 
-          <h3>Informações de contato</h3>
+          <h3>
+            Informações de contato
+          </h3>
 
           <div class="contact-line">
+
             <small>WhatsApp</small>
 
             <a
@@ -1452,9 +1733,11 @@
             >
               (83) 99309-7113
             </a>
+
           </div>
 
           <div class="contact-line">
+
             <small>Instagram</small>
 
             <a
@@ -1464,27 +1747,34 @@
             >
               @cheftec_cozinhas
             </a>
+
           </div>
 
           <div class="contact-line">
+
             <small>Localização</small>
+
             João Pessoa — Paraíba
+
           </div>
 
           <div class="contact-line">
+
             <small>Website</small>
+
             cheftec.com.br
+
           </div>
 
         </div>
+
       </div>
+
     </section>
 
   </main>
 
-  <!-- =============================
-       RODAPÉ
-  ============================= -->
+  <!-- RODAPÉ -->
 
   <footer class="footer">
 
@@ -1497,16 +1787,15 @@
         Todos os direitos reservados.
       </span>
 
-      <a href="#inicio">Voltar ao início ↑</a>
+      <a href="#inicio">
+        Voltar ao início ↑
+      </a>
 
     </div>
 
   </footer>
 
-  <!-- =============================
-       BOTÃO FLUTUANTE INSTAGRAM
-       CANTO INFERIOR ESQUERDO
-  ============================= -->
+  <!-- INSTAGRAM FLUTUANTE -->
 
   <a
     class="floating-social floating-instagram"
@@ -1553,10 +1842,7 @@
 
   </a>
 
-  <!-- =============================
-       BOTÃO FLUTUANTE WHATSAPP
-       CANTO INFERIOR DIREITO
-  ============================= -->
+  <!-- WHATSAPP FLUTUANTE -->
 
   <a
     class="floating-social floating-whatsapp"
@@ -1579,26 +1865,22 @@
 
   </a>
 
-  <!-- =============================
-       JAVASCRIPT
-  ============================= -->
+  <!-- JAVASCRIPT -->
 
   <script>
 
-    // Ano atualizado automaticamente no rodapé.
+    // Ano automático do rodapé
 
     document.getElementById("year").textContent =
       new Date().getFullYear();
 
-
-    // Menu responsivo para dispositivos móveis.
+    // Menu mobile
 
     const menuButton =
       document.getElementById("menuButton");
 
     const navLinks =
       document.getElementById("navLinks");
-
 
     function fecharMenu() {
 
@@ -1617,7 +1899,6 @@
       menuButton.textContent = "☰";
 
     }
-
 
     menuButton.addEventListener("click", function() {
 
@@ -1639,8 +1920,7 @@
 
     });
 
-
-    // Fecha o menu após selecionar uma seção.
+    // Fecha o menu ao clicar em um item
 
     navLinks.querySelectorAll("a").forEach(function(link) {
 
@@ -1648,8 +1928,7 @@
 
     });
 
-
-    // Fecha o menu ao pressionar Escape.
+    // Fecha o menu com Escape
 
     document.addEventListener("keydown", function(event) {
 
@@ -1659,8 +1938,7 @@
 
     });
 
-
-    // Fecha o menu ao voltar para a versão desktop.
+    // Corrige o menu ao ampliar a tela
 
     window.addEventListener("resize", function() {
 
